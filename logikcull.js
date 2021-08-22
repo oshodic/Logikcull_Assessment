@@ -1,5 +1,5 @@
 function longestSubstr(arr) {
-  const charArray = arr.join('').split('');
+  const charArr = arr.join('').split('');
 
   let i = 0
   
@@ -12,8 +12,8 @@ function longestSubstr(arr) {
     length: 0
   }
 
-  while (i < charArray.length) {
-    letter = charArray[i]
+  while (i < charArr.length) {
+    letter = charArr[i]
     if (currentLetter.letter != letter) {
       currentLetter = {
         letter,
