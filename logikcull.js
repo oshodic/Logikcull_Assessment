@@ -1,4 +1,4 @@
-function longestChar(arr) {
+function longestSubstr(arr) {
   const charArray = arr.join('').split('');
 
   let i = 0
@@ -29,24 +29,4 @@ function longestChar(arr) {
   return longestLetter
 }
 
-console.log(longestSubstring(['abcd','aabb','bbbcc']));
-
-
-
-for (i = 0; i < charArray.length; i++) {
-
-  letter = charArray[i]
-    if (currentLetter.letter != letter) {
-      currentLetter = {
-        letter,
-        length: 0
-      };
-    }
-    currentLetter.length += 1;
-    if (currentLetter.length > longestLetter.length) {
-      longestLetter = { ...currentLetter }
-    }
-    i += 1;
-  }
-  return longestLetter
-}
+console.log(longestSubstr(['abcd','aabb','bbbcc']));
