@@ -36,7 +36,7 @@ function longestSubstr(arr) {
 // using 'if' statement
 
 
-function longestSubstring(arr) {
+function longestSubstr(arr) {
   const charArr = arr.join('').split('');
   
   let longestLetter = {
